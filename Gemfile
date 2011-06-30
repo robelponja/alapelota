@@ -7,6 +7,9 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'
 
+# para la fotiche del equipo
+gem 'paperclip', '2.3.11'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
