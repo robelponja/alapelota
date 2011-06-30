@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Match date:</b>
+  <%= @match.match_date %>
+</p>
+
+<p>
+  <b>Winner:</b>
+  <%= @match.winner %>
+</p>
+
+<p>
+  <b>Result:</b>
+  <%= @match.result %>
+</p>
+
+<p>
+  <b>Finished:</b>
+  <%= @match.finished %>
+</p>
+
+
+<%= link_to 'Edit', edit_match_path(@match) %> |
+<%= link_to 'Back', matches_path %>

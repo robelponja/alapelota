@@ -1,0 +1,29 @@
+<h1>Listing matches</h1>
+
+<table>
+  <tr>
+    <th>Match date</th>
+    <th>Winner</th>
+    <th>Result</th>
+    <th>Finished</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @matches.each do |match| %>
+  <tr>
+    <td><%= match.match_date %></td>
+    <td><%= match.winner %></td>
+    <td><%= match.result %></td>
+    <td><%= match.finished %></td>
+    <td><%= link_to 'Show', match %></td>
+    <td><%= link_to 'Edit', edit_match_path(match) %></td>
+    <td><%= link_to 'Destroy', match, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Match', new_match_path %>
